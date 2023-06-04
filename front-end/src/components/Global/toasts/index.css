@@ -1,0 +1,28 @@
+.toast {
+  position: fixed;
+  top: 30px;
+  animation: slide-in 1s ease-in-out forwards,
+    slide-out 1s ease-in-out forwards 5s;
+}
+
+@keyframes slide-in {
+  from {
+    right: -500px;
+    opacity: 0;
+  }
+  to {
+    right: 30px;
+    opacity: 1;
+  }
+}
+
+@keyframes slide-out {
+  from {
+    right: 30px;
+    opacity: 1;
+  }
+  to {
+    right: -500px;
+    opacity: 0;
+  }
+}
